@@ -1,7 +1,6 @@
-var myImage = document.querySelector('img');
-
-
 // 实现点击切换图片
+
+var myImage = document.querySelector('img');
 myImage.onclick = function() {
     var mySrc = myImage.getAttribute('src');
     if(mySrc === 'images/timg.jpeg') {
@@ -11,7 +10,7 @@ myImage.onclick = function() {
     }
 }
 
-
+// 实现修改用户名称
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 
