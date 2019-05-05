@@ -1,44 +1,41 @@
-body,html{
-  margin: 0 auto;
+body,html {
+  margin: 0;
   font-family: sans-serif;
 }
 
-ul{
+ul {
   padding: 0;
   width: 100%;
 }
 
-li{
+li {
   display: inline;
 }
 
-a{
+a {
   outline: none;
   text-decoration: none;
   display: inline-block;
-  width:19.5%;
+  width: 19.5%;
   margin-right: 0.625%;
   text-align: center;
   line-height: 3;
-  color: black; 
-  /* border: 1px solid pink; */
-  /* overflow: hidden; */
-
+  color: black;
 }
 
-li:last-child a{
+li:last-child a {
   margin-right: 0;
 }
 
-a:link,a:visited,a:focus{
-  background-color: yellow;
+a:link, a:visited, a:focus {
+  background: yellow;
 }
 
-a:hover{
-  background: green;
+a:hover {     
+  background: orange;
 }
 
-a:active{
+a:active {
   background: red;
-  color: wheat;
+  color: white;
 }

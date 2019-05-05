@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>这是一个表单</title>
+
+    <style>
+    form {
+  /* 居中表单 */
+  margin: 0 auto;    /*外边距*/
+  width: 400px;         
+  /* 显示表单的轮廓 */
+  padding: 1em;       /*内边距*/
+  border: 1px solid pink;
+  border-radius: 2em;
+}
+
+form div + div{
+    margin-top: 1em;
+}
+
+label{
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+}
+label:hover{
+   background-color: blueviolet; 
+}
+
+input,textarea{
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+
+    border: 1px solid #999;
+}
+
+input:focus,textarea:focus{
+    border-color: crimson;
+    background-color: rgb(21, 211, 94);
+}
+
+textarea{
+    vertical-align: top;
+    height: 5em;
+}
+
+.button{
+    padding-left: 90px;
+}
+
+
+    
+    </style>
+
+</head>
+<body>
+
+
+        <form action="#" method="post">
+                <!-- <fieldset> -->
+                    <!-- <legend>六味地黄丸</legend> -->
+                <div>
+                    <label for="name">名 字:</label>
+                    <input type="text" id="name" value="郝爱国" name="user_name"/>
+                </div>
+                <div>
+                    <label for="mail">邮 箱:</label>
+                    <input type="email" id="mail" value="@" name="user_email"/>
+                </div>
+                <div>
+                    <label for="msg">信 息:</label>
+                    <textarea id="msg" name="user_message">输入一点东西吧</textarea>
+                </div>
+        
+        
+                <div class="button">
+                    <button type="submit">发 送</button>
+                    </div>
+                <!-- </fieldset> -->
+            
+                    
+            </form>
+    
+</body>
+</html>

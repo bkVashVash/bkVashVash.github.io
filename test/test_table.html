@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html-表格</title>
+    <style>
+    
+    table{ 
+        border-collapse: collapse;        /* 表格边框 */
+        border: 2px solid rgb(200,200,200);
+        letter-spacing: 1px;
+    }
+
+    td,th{
+        border: 1px solid rgb(190, 190,190);
+    }
+    
+    </style>
+</head>
+<body>
+        <table>
+                <colgroup>
+                <!-- 设置第三列样式，col -->
+                  <col>
+                  <col>
+                  <col style="border: 2px solid pink;" span="1">
+                </colgroup>
+
+              <!-- 表格头部 -->
+              <caption> 疯狂的：(+<a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">外星人</a>+)</caption>
+              <thead>
+                <tr>
+                  <th colspan="2">&nbsp;</th>
+                  <th scope="col">姓名</th>
+                  <th scope="col">性别</th>
+                  <th scope="col">年龄</th>
+                  <th scope="col">身高</th>
+                  <th scope="col">体重</th>
+
+                </tr>
+        
+              </thead>
+        
+              <tbody>
+                <tr>
+                  
+                  <!-- 换行后的第一行 ，占 2 列，4 行 -->
+                  <th scope="rowgroup" colspan="2" rowspan="4">主脚</th>
+                  <th scope="row">徐峥</th>
+                  <td>33</td>
+                  <td>79</td>
+                  <td>27</td>
+                  <td>7</td>
+            
+                </tr>
+        
+                <tr>
+                    <!-- 前面第一个被挡住， 换行后的第一行 -->
+                    <th scope="row">黄渤</th>
+                    <td>330</td>
+                    <td>879</td>
+                    <td>27</td>
+                    <td>7</td>
+    
+          
+                  </tr>
+        
+                  <tr>
+                      <!-- 和前面的一样 -->
+                      <th scope="row">沈腾</th>
+                      <td>33</td>
+                      <td>79</td>
+                      <td>27</td>
+                      <td>7</td>
+                    
+                    </tr>
+        
+                    <tr>
+                        <!-- 和前面的一样 -->
+                        <th scope="row">雷佳音</th>
+                        <td>330</td>
+                        <td>879</td>
+                        <td>27</td>
+                        <td>7</td>
+                
+                      </tr>
+        
+                      <tr>
+                          <!-- 换到新的一行 ，一列  ，4 行 -->
+                          <th colspan="1" rowspan="4">配角</th>
+                          <!-- 流体，占两行 -->
+                          <th rowspan="2">配角(好人)</th>
+                          <th>外星人</th>
+                          <td>44</td>
+                          <td>3</td>
+                          <td>422</td>
+                          <td>57</td>
+        
+                      </tr>
+        
+                      <tr>
+                          <th>耿浩</th>
+                          <td>30</td>
+                          <td>79</td>
+                          <td>27</td>
+                          <td>7</td>
+                        
+                        </tr>
+        
+                      <tr>
+                          <th rowspan="2">配角(坏蛋)</th>
+        
+                          <th>欢欢</th>
+                          <td>330</td>
+                          <td>879</td>
+                          <td>27</td>
+                          <td>7</td>
+                    
+                        </tr>
+        
+                        <tr>
+                            <th>粤语哥</th>
+                            <td>dd</td>
+                            <td>79</td>
+                            <td>27</td>
+                            <td>7</td>
+                            
+                          </tr>
+        
+                          <tr> 
+                              <!-- 最后一行，占两列 -->
+                              <th colspan="2">星球</th>
+                              <th>惑星</th>
+                              <td>79</td>
+                              <td>27</td>
+                              <td>7</td>
+                              <td>7</td>
+                              
+                            </tr>
+              </tbody>
+            </table>
+            
+</body>
+</html>
