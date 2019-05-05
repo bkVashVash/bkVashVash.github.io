@@ -11,21 +11,21 @@
 </head>
 <body>
   <h2>响应式图片</h2>
-   <img srcset="images/1.jpg 320w,
-                images/2.jpg 480w,
-                images/3.jpg 800w"
+   <img srcset="../images/1.jpg 320w,
+                ../images/2.jpg 480w,
+                ../images/3.jpg 800w"
         sizes="(max-width: 320px) 280px,
                 (max-width:480px) 440px,
                  800px"
-        src="/images/3.jpg" alt="人间残渣">
+        src="../images/3.jpg" alt="人间残渣">
 
     <hr>
 
     <h2>不同图片切换</h2>
     <picture>
-      <source media="(max-width: 799px)" srcset="images/4.jpeg">
-        <source media="(min-width: 800px)" srcset="images/12.svg">
-        <img src="/images/timg.jpeg" alt="">
+      <source media="(max-width: 799px)" srcset="../images/4.jpeg">
+        <source media="(min-width: 800px)" srcset="../images/12.svg">
+        <img src="../images/timg.jpeg" alt="">
 
     </picture>
             
