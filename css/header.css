@@ -1,0 +1,57 @@
+body,html{
+  margin: 0 auto;
+  font-family: sans-serif;
+  
+}
+
+/*  ----                header  开始             ----   */
+h1{
+ text-align: center;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+
+  /* 弹性盒子 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+li{
+  text-decoration: none;
+  height: 50px;
+  width: 18%;
+  background-color: rgb(67, 184, 164);
+  margin: 10px;
+  flex: 1 200px;
+
+  /* 弹性盒子 */
+  display: flex;
+}
+
+a{
+  text-decoration: none;
+  flex: 1 200px;
+  text-align: center;
+  line-height: 50px;
+  color: beige
+}
+
+
+/* 设置链接样式 */
+a:link,a:visited,a:focus{
+  background-color: rgb(65, 151, 104);
+}
+
+a:hover{
+  background: rgb(184, 46, 177);
+}
+
+a:active{
+  background: red;
+  color: wheat;
+}
+
+/*  ----               header  结束                  ----   */

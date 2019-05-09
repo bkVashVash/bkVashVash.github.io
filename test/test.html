@@ -1,131 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="cn">
 <head>
-    <meta charset="utf-8">
-    <title>ECharts</title>
-    <!-- 引入 echarts.js -->
-    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts-en.common.js"></script>
-    <!-- <script src="../js/echarts.js"></script> -->
+    <meta charset="UTF-8">
+    <meta name="author" content="lulu">
+    <meta name="description" content="去年今日此门中，人面桃花相映红">  
+
+    <meta http-equiv="X-UA-Compatible">
+    <title>深渊发明家</title>
+    <link rel="shortcut icon" href="../images/index.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/header.css">
+    
 </head>
 <body>
-    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-    <div id="main" style="width: 600px;height:400px;"></div>
-    <script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('main'));
+   
+  <!--          header 开始            -->
+  <header >
+        <h1>HOME 灵能100/100</h1>
 
-        // 指定图表的配置项和数据
-        option = {
-    // 标题
-    title: {text: ''},
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="love/love.html">love页</a></li>
+            <li><a href="http://www.bkvashvash.cn/blogs/">WordPressblog</a></li>
+            <li><a href="loppoProject/dist/index.html">loppoblog</a></li>
+            <li><a href="test/test_table.html">html-表格测试</a></li>
+  
+            <li><a href="test/test_srcset.html">html-响应式图片</a></li>
+            <li><a href="test/test_form.html">表-单</a></li>
+            <li><a href="test/change_user_img.html">改变图片</a></li>
+            <li><a href="test/ul_li_a_style.html">样式化连接</a></li>
+            <li><a href="test/test.html">测试</a></li>
+    
+            <li><a href="test/float.html">float浮动布局</a></li>
+            <li><a href="test/position.html">position定位</a></li>
+            <li><a href="test/flexbox.html">弹性盒子</a></li>
+            <li><a href="test/echarts_baoxian.html">echarts绘图</a></li>
+            </ul>
 
-    // x轴
-    xAxis: {
-        type: 'category',
-        name:'发病期',
-        data: ['早','中', '晚'],
+      </header>
+   <!--          header 结束            -->
 
-        //  坐标轴箭头
-        axisLine:{
-            symbol:['none','arrow']
-        }
-    },
+  
 
-    // y轴
-    yAxis: {
-        type: 'value',
-        name:'',
-        min:0,
-        max:100,
-        interval:20,
-
-        //  坐标轴箭头
-        axisLine:{
-            symbol:['none','arrow'],
-        },
-
-        // 自定义y轴数据
-        axisLabel:{   
-          // formatter: '{value} °C'
-          formatter: function(value){
-              var texts = [];
-              if(value==0){
-                texts.push('0');
-              }
-              else if(value<=20){
-                texts.push('');
-              }
-              else if(value<=40){
-                texts.push('');
-              }
-              else if(value<=60){
-                texts.push('');
-              }
-              else if(value<=80){
-                texts.push('');
-              }
-              else{
-                texts.push('');
-              }
-              return texts;
-            }
-        }
-        
-
-    },
-    series: [{
-        name: '治疗费',
-        data: [10,30, 80],
-        type: 'line',
-        smooth: true,
-        // itemStyle : { normal: {label : {show: true}}}
-        // markPoint 标注
-        markPoint: {
-          label:{ 
-            show: true,  
-            color: '#000000',//气泡中字体颜色
-            fontWeight : '400',
-	         				},
-          symbolSize: 40,  //控制气泡大小
-          itemStyle:{
-            // 字体颜色
-            color: '#ffffff'
-	         		},
-                data: [
-                    // {type: 'max', name: '最大值'},
-
-                    // Echarts markPoint 标注自定义的使用
-                    {name: '最大值',value:'治疗费',xAxis:'晚',yAxis:80},
-                ]
-            },
-    },
-    {
-    name: '治疗费',
-        data: [80,30, 10],
-        type: 'line',
-        smooth: true,
-        markPoint: {
-          label:{ 
-            show: true,  
-            color: '#000000',//气泡中字体颜色
-            fontWeight : '400',
-	         				},
-          symbolSize: 20,  //控制气泡大小
-          itemStyle:{
-            color: '#ffffff'
-	         		},
-                data: [
-                    // {type: 'min', name: '最小值'},
-                    {name: '最小值',value:'治愈率',xAxis:'晚',yAxis:10},
-                ]
-            },
-    },
-  ]
-};
-
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-    </script>
-</body>
+    </body>
 </html>
